@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <meta charset="utf-8">
+    <title>Prototipo</title> <!--cambiar título-->
+
+    <script src="js/template-head.js"></script>
+
+    <meta name="description" content="..."> <!--cambiar descipción-->
+    <meta property="og:title" content="Prototipo"> <!--cambiar título-->
+    <meta property="og:description" content="..."> <!--cambiar descipción-->
+    <meta property="og:image" content="imgs/ref-poster.jpg"> <!--cambiar imagen-->
+  </head>
+  <body onload="funciones()">
+    <script src="js/template-body.js"></script>
+
+    <script type="text/javascript">
+      function ejecuteCambio() {
+        //alert("Comienza el cambio");
+        var titulo = document.getElementById('titulo');
+        titulo.innerHTML = "Mi nombre obra"; //cambiar título de obra
+        var cuerpo = document.getElementById('cuerpo'); //cambiar la descipción de la obra
+        cuerpo.innerHTML = "Texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción.";
+        var imagen = document.getElementById('srcPoster');
+        imagen.src = "ref-poster.jpg"; //cambiar la imagen
+        var video = document.getElementById('srcVideo');
+        video.src = "video.mp4"; //cambiar el video
+      }
+      function funciones(){
+        funcion_menu();
+        ejecuteCambio();
+      };
+    </script>
+  </body>
+</html>
