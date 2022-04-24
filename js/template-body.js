@@ -23,10 +23,15 @@ document.write('\
               Tu navegador no soporta este video.\
           </video>\
         </div>\
-        <div class="cuadro-texto">\
-          <h2 id="titulo" class="titulo">Título obra</h2>\
-          <p id="cuerpo" class="cuerpo">Texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción.</p>\
-          <p id="autor" class="autor">Nombre autor</p>\
+        <div class="cuadro-contenido">\
+          <div class="flecha">\
+            <a href="#contents"><img src="imgs/flecha.svg" alt="flecha"></a>\
+          </div>\
+          <div class="cuadro-texto" id="contents">\
+            <h2 id="titulo" class="titulo">Título obra</h2>\
+            <p id="cuerpo" class="cuerpo">Texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción texto descripción.</p>\
+            <p id="autor" class="autor">Nombre autor</p>\
+          </div>\
         </div>\
       </main>\
 \
@@ -36,6 +41,9 @@ document.write('\
           <img src="imgs/logo1.png" alt="logo1">\
           <img src="imgs/logo2.png" alt="logo2">\
           <img src="imgs/logo3.png" alt="logo3">\
+          <img src="imgs/logo4.png" alt="logo1">\
+          <img src="imgs/logo5.png" alt="logo2">\
+          <img src="imgs/logo6.png" alt="logo3">\
         </div>\
         <p class="legal">&copy Derechos reservados</p>\
       </footer>\
