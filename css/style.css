@@ -1,14 +1,23 @@
 @font-face {
-  font-family: 'Bodoni Moda';
-  src: url('fonts/BodoniModa-VariableFont.ttf') format('truetype');
+  font-family: 'Anton';
+  src: url('../fonts/Anton-Regular.ttf') format('truetype');
   font-style: normal;
-  font-weight: 400 900;
+}
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('../fonts/NotoSansDisplay-VariableFont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
 }
 
 *{
   margin: 0;
   padding: 0;
 }
+
+/*body{
+  background: url("../imgs/ref-poster.jpg");
+}*/
 
 main{
   margin-top: -80px;
@@ -26,35 +35,56 @@ main{
   /*height: 800px;*/
 }
 
-.cuadro-texto{
+.flecha{
+  display:flex;
+  width: 100%;
+  height:50px;
+  justify-content: center;
+  z-index: 60;
+}
+
+.flecha img{
+  height: 100%;
+}
+
+.cuadro-contenido{
   z-index: 50;
-  background-color: #ffffff;
+  transform: translate(0, -6.5rem);
+  height: 200px;
+}
+
+.cuadro-texto{
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px 10px 0 0;
   padding: 1.5rem;
-  border-radius: 5px 5px 0 0;
-  transform: translate(0, -5rem);
+}
+
+.flecha{
+  margin: 0.75rem 0;
 }
 
 .titulo{
-  font-family: 'Bodoni Moda', serif;
+  font-family: 'Anton', sans-serif;
   font-style: normal;
-  font-weight: 800;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #81C8C2;
   text-align: left;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 2px;
 }
 
 .cuerpo{
-  font-family: 'Bodoni Moda', serif;
+  font-family: 'Noto Sans Display', sans-serif;
   font-style: normal;
+  font-weight: 400;
   font-size: 1rem;
   color: #000000;
   text-align: justify;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .autor{
-  font-family: 'Bodoni Moda', serif;
+  font-family: 'Noto Sans Display', sans-serif;
   font-style: italic;
   font-size: 1rem;
   color: #E95C0F;
@@ -79,7 +109,7 @@ footer{
 
 .logos-footer img{
   height: 3rem;
-  margin: 0 1rem;
+  margin: 0 0.1rem;
 }
 
 .legal{
